@@ -1,84 +1,117 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Reggie Reg Cole </title>
-  <!-- Latest compiled and minified CSS -->
-	<meta name="google-site-verification" content="ivN_UJfOPsBQp94jvIBqnvhmR-Wzq-q0UZSflf_2Mc4" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#">Home</a>
-       </div>
-     </div>
-   </nav>
+<title>Reggie Cole</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-   <!-- Main jumbotron for a primary marketing message or call to action -->
-   <div class="jumbotron">
-     <div class="container">
-       <h1>Reggie Cole</h1>
-       <p>Software Engineer, Emerging Technology Enthusiast</p>
-     </div>
-   </div>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="resources/images/blue-beetle.jpeg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
 
-   <div class="container">
-     <!-- Example row of columns -->
-     <div class="row">
-       <div class="col-md-4">
-         <h2>Favorite Quotes</h2>
-         <div class="well">
-           "He is no fool who gives what he cannot keep to gain that which he cannot lose."
-              -Jim Elliot
-         </div>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+</div>
 
-         <div class="well">
-           “Indeed the safest road to Hell is the gradual one--the gentle slope,
-            soft underfoot, without sudden turnings, without milestones,
-            without signposts,...Your affectionate uncle, Screwtape.”
-                  ― C.S. Lewis, The Screwtape Letters
-         </div>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">Reggie Cole.</h1>
+        <h6>Sci-Fi & Comic Bool Guy / <span class="w3-tag"> Software Engineer </span> / Technology Enthusiast </h6>
+        <img src="resources/images/mrMe.png" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
 
-       </div>
-       <div class="col-md-4">
-         <h2>More Information</h2>
-         <div class="well well-lg">
-           <p>Software development and programming is both a profession and a hobby for me.
-             My ultimate professional goal is to be involved with a software project that can be considered a true "game-changer" when compared to other competing software products and projects.</p>
-         </div>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>I'm a Software Engineer person. Software development and programming is both a profession and a hobby for me. My ultimate professional goal is to be involved with a software project that can be considered a true "game-changer". Personal goal is to be able to look back in my life and say "Dang, I created some awesome things."
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">Learning new things</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+        </div>
+        <p class="w3-wide">Java</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+        </div>
+        <p class="w3-wide">Spring</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:91%"></div>
+        </div>
+        <p class="w3-wide">Web Applications</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+        </div>
+        <p class="w3-wide">JavaScript / CSS/ HTML </p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+        </div><br />
+        <p class="w3-wide">Front-End Development </p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+        </div><br />
 
-      </div>
-       <div class="col-md-4">
-         <h2>Contact Information</h2>
-          <div class="well">
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Dallas,TX US</p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: Slow down, we barely know each other</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: c2cold2@gmail.com </p>
+            </div><br>
+            <p>Send me a message (or not, that's cool too)</p>
+
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
             <a class="hover" href="https://github.com/regcole" target="_blank"><img src="resources/images/github.png" width="50px" alt="GitHub Logo"></a>
-			      <a class="hover" href="https://www.linkedin.com/in/reginald-cole-14204a59/" target="_blank"><img src="resources/images/linkedin.png" width="50px" alt="LinkedIn Logo"></a>
-			      <a class="hover" href="http://stackoverflow.com/users/2438574/reggie-cole?tab=profile" target="_blank"><img src="resources/images/stackoverflow.png" width="50px" alt="Stackoverflow Logo"></a>
+            <a class="hover" href="https://www.linkedin.com/in/reginald-cole-14204a59/" target="_blank"><img src="resources/images/linkedin.png" width="50px" alt="LinkedIn Logo"></a>
+            <a class="hover" href="http://stackoverflow.com/users/2438574/reggie-cole?tab=profile" target="_blank"><img src="resources/images/stackoverflow.png" width="50px" alt="Stackoverflow Logo"></a>
+            <!-- End footer -->
+        </footer>
 
-          </div>
+        <!-- END PAGE CONTENT -->
+    </div>
 
-       </div>
-     </div>
-
-     <hr>
-   </div> <!-- /container -->
-
-    <footer>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script
-      			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-      			  crossorigin="anonymous"></script>
-                    <!-- Latest compiled and minified JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-     </script>
-
-    </footer>
 </body>
 </html>
