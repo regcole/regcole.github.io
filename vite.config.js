@@ -7,7 +7,7 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
-        outDir: 'dist'
+        outDir: 'docs'
     },
     server: {
         watch: {
