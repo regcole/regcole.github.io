@@ -1,114 +1,18 @@
 <!DOCTYPE html>
-<html>
-<title>Reggie Cole</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en" data-theme="dim">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="resources/images/blue-beetle.jpeg" style="width:100%">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-    </a>
-</nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reggie Cole</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script type="module" src="/src/my-app.ts"></script>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    </div>
-</div>
+</head>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo">Reggie Cole.</h1>
-        <h6>Sci-Fi & Comic Book Guy / <span class="w3-tag"> Software Engineer </span> / Technology Enthusiast </h6>
-        <img src="resources/images/reggie.jpg" alt="boy" class="w3-image" width="619" height="721">
-    </header>
-
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">About Me</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p>
-            I am an empathetic solution and experience builder and architect. I work to shape technology that is meant to work with actual people. The works I deliver are artifacts that either empower people to move their life in beneficial directions, or work/live in better ways .
-        </p>
-        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-        <p class="w3-wide">Learning New Things</p>
-        <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:100%"></div>
-        </div>
-        <p class="w3-wide">Java</p>
-        <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:98%"></div>
-        </div>
-            <p class="w3-wide">JavaScript (Webcomponents,Node.js, all the Front-end things) </p>
-        <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:98%"></div>
-        </div><br />
-        <p class="w3-wide">Web Applications</p>
-        <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-        </div>   
-        <p class="w3-wide">Spring</p>
-        <div class="w3-white">
-            <div class="w3-dark-grey" style="height:28px;width:91%"></div>
-        </div>
-
-
-        <!-- Contact Section -->
-        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-            <h2 class="w3-text-light-grey">Contact Me</h2>
-            <hr style="width:200px" class="w3-opacity">
-
-            <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Dallas,TX US</p>
-                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: Slow down, we barely know each other</p>
-                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: contact@reggiecole.com </p>
-            </div><br>
-            <p>Send me a message (or not, that's cool too)</p>
-
-            <!-- End Contact Section -->
-        </div>
-
-        <!-- Footer -->
-        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-            <a class="hover" href="https://github.com/regcole" target="_blank"><img src="resources/images/github.png" width="50px" alt="GitHub Logo"></a>
-            <a class="hover" href="https://www.linkedin.com/in/reginald-cole-14204a59/" target="_blank"><img src="resources/images/linkedin.png" width="50px" alt="LinkedIn Logo"></a>
-            <a class="hover" href="https://stackoverflow.com/users/2438574/reggie-cole?tab=profile" target="_blank"><img src="resources/images/stackoverflow.png" width="50px" alt="Stackoverflow Logo"></a>
-            <!-- End footer -->
-        </footer>
-
-        <!-- END PAGE CONTENT -->
-    </div>
-
+<body>
+    <my-app></my-app>
 </body>
+
 </html>
